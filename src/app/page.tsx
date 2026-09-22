@@ -40,9 +40,8 @@ export default function Home() {
             {/* Caso 1: Reparaciones Manzanares */}
             <div className="bg-gray-50 rounded-2xl p-8 border border-gray-100 hover:shadow-lg transition-shadow">
               {/* Contenedor de Imagen */}
-              <div className="w-full h-48 bg-gray-200 rounded-xl mb-6 flex flex-col items-center justify-center border-2 border-dashed border-gray-300 text-center p-4">
-                <span className="text-gray-500 font-medium mb-1">📷 Imagen de Manzanares</span>
-                <span className="text-xs text-gray-400">Pega aquí tu imagen real (ej: captura del creador de presupuestos en PDF)</span>
+              <div className="w-full h-48 rounded-xl mb-6 overflow-hidden relative shadow-inner border border-gray-200">
+                <img src="/manzanares.png" alt="Reparaciones Manzanares" className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500" />
               </div>
               
               <div className="flex items-center gap-3 mb-6">
@@ -62,9 +61,8 @@ export default function Home() {
             {/* Caso 2: Autocaravanas */}
             <div className="bg-gray-50 rounded-2xl p-8 border border-gray-100 hover:shadow-lg transition-shadow">
               {/* Contenedor de Imagen */}
-              <div className="w-full h-48 bg-gray-200 rounded-xl mb-6 flex flex-col items-center justify-center border-2 border-dashed border-gray-300 text-center p-4">
-                <span className="text-gray-500 font-medium mb-1">📷 Imagen del Chatbot Camper</span>
-                <span className="text-xs text-gray-400">Pega aquí tu imagen real (ej: captura del asistente conversacional)</span>
+              <div className="w-full h-48 rounded-xl mb-6 overflow-hidden relative shadow-inner border border-gray-200">
+                <img src="/camperbot.png" alt="Proyecto CamperBot" className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500" />
               </div>
 
               <div className="flex items-center gap-3 mb-6">
