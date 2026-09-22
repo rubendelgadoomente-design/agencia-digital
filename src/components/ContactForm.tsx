@@ -11,13 +11,38 @@ export function ContactForm() {
   const handleSubmit = async (formData: FormData) => {
     setStatus('idle');
     startTransition(async () => {
-      const result = await submitLead(formData);
-      if (result?.success) {
-        setStatus('success');
-        formRef.current?.reset();
-      } else {
+      try {
+        const payload = {
+          access_key: "8579a69c-e7a0-412b-9679-46792d42e9b3",
+          subject: `🔥 NUEVO LEAD CUALIFICADO: ${formData.get('nombre')}`,
+          from_name: "Motor Local Web",
+          "Nombre del Cliente": formData.get('nombre'),
+          "Teléfono": formData.get('telefono'),
+          "Problema Principal": formData.get('cuello'),
+          "Capacidad de Inversión": formData.get('inversion'),
+        };
+
+        const response = await fetch('https://api.web3forms.com/submit', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+          },
+          body: JSON.stringify(payload)
+        });
+        
+        const result = await response.json();
+        
+        if (result.success) {
+          setStatus('success');
+          formRef.current?.reset();
+        } else {
+          setStatus('error');
+          setErrorMsg('Hubo un error al enviar. Inténtalo de nuevo.');
+        }
+      } catch (error) {
         setStatus('error');
-        setErrorMsg(result?.error || 'Error al enviar');
+        setErrorMsg('Fallo de conexión. Por favor revisa tu internet.');
       }
     });
   };
