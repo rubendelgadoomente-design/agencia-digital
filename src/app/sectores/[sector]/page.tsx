@@ -1,4 +1,5 @@
 import { sectores, SectorSlug } from "@/data/sectores";
+import { ciudades } from "@/data/ciudades";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 
@@ -79,9 +80,24 @@ export default async function SectorPage({ params }: Props) {
         </ul>
         
         <div className="mt-10 text-center">
-          <button className="w-full sm:w-auto bg-gray-900 hover:bg-gray-800 text-white font-bold py-4 px-10 rounded-lg transition-colors">
+          <a href="/#contacto" className="inline-block w-full sm:w-auto bg-gray-900 hover:bg-gray-800 text-white font-bold py-4 px-10 rounded-lg transition-colors">
             Analizar mi negocio gratis
-          </button>
+          </a>
+        </div>
+      </div>
+
+      <div className="mt-20 pt-16 border-t border-gray-200">
+        <h3 className="text-2xl font-bold mb-8 text-gray-900 text-center">Sistemas implementados por ciudad</h3>
+        <div className="flex flex-wrap justify-center gap-3 max-w-4xl mx-auto">
+          {ciudades.map((ciudad) => (
+            <Link 
+              key={ciudad.slug}
+              href={`/sectores/${resolvedParams.sector}/${ciudad.slug}`}
+              className="px-4 py-2 bg-white border border-gray-200 rounded-full text-sm font-medium text-gray-600 hover:bg-blue-50 hover:text-blue-700 hover:border-blue-200 transition-colors"
+            >
+              {data.nombre} en {ciudad.nombre}
+            </Link>
+          ))}
         </div>
       </div>
     </div>
