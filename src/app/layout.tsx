@@ -19,9 +19,6 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://www.agenciamotorlocal.es",
   },
-  verification: {
-    google: "[[GSC_VERIFICATION]]",
-  },
   openGraph: {
     type: "website",
     locale: "es_ES",
