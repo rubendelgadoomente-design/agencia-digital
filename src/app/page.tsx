@@ -37,24 +37,38 @@ export default function Home() {
           </div>
 
           <div className="grid md:grid-cols-2 gap-8">
-            {/* Caso 1: Reparaciones Manzanares */}
+            {/* Caso 1: Reparaciones Manzanares (Mi propia empresa) */}
             <div className="bg-gray-50 rounded-2xl p-8 border border-gray-100 hover:shadow-lg transition-shadow">
               {/* Contenedor de Imagen */}
               <div className="w-full h-48 rounded-xl mb-6 overflow-hidden relative shadow-inner border border-gray-200">
                 <img src="/manzanares.png" alt="Reparaciones Manzanares" className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500" />
               </div>
               
-              <div className="flex items-center gap-3 mb-6">
-                <span className="bg-green-100 text-green-800 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide">Reformas y Mantenimiento</span>
-                <span className="text-sm font-semibold text-gray-500">Reparaciones Manzanares</span>
+              <div className="flex items-center gap-3 mb-4">
+                <span className="bg-blue-100 text-blue-800 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide">Mi propia empresa</span>
+                <span className="text-sm font-semibold text-gray-500">Manzanares el Real</span>
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-3">Ecosistema Local + SaaS de Presupuestos</h3>
-              <p className="text-gray-600 mb-6">
-                Dominio total de las búsquedas locales en la zona de la Sierra de Madrid. Además de captar llamadas semanales, les implementamos un <strong>generador de presupuestos en PDF automatizado</strong> (SaaS interno) para reducir el tiempo de gestión con el cliente en un 80%.
+              <h3 className="text-2xl font-bold text-gray-900 mb-3">Reparaciones Manzanares: el sistema probado en mi negocio</h3>
+              <p className="text-gray-600 mb-6 leading-relaxed">
+                Antes de ofrecerlo a nadie, lo apliqué en mi empresa de reparaciones de la Sierra de Madrid: posicionamiento local en Google Maps y un generador de presupuestos en PDF que reduce el tiempo de gestión con cada cliente.
               </p>
+              <div className="grid grid-cols-3 gap-3 p-4 bg-white rounded-xl border border-gray-200 text-center mb-6">
+                <div>
+                  <span className="block text-xs text-gray-400 uppercase font-semibold">Antes</span>
+                  <span className="text-sm font-bold text-gray-700">[[LLAMADAS/MES ANTES]]</span>
+                </div>
+                <div className="border-x border-gray-100">
+                  <span className="block text-xs text-blue-500 uppercase font-semibold">Ahora</span>
+                  <span className="text-sm font-bold text-blue-600">[[LLAMADAS/MES AHORA]]</span>
+                </div>
+                <div>
+                  <span className="block text-xs text-green-500 uppercase font-semibold">Google Maps</span>
+                  <span className="text-sm font-bold text-green-600">[[POSICIÓN EN MAPS]]</span>
+                </div>
+              </div>
               <ul className="space-y-2 text-sm font-medium text-gray-700">
-                <li className="flex items-center gap-2"><span className="text-blue-600">✓</span> Tráfico orgánico geolocalizado</li>
-                <li className="flex items-center gap-2"><span className="text-blue-600">✓</span> Cierre de ventas automatizado</li>
+                <li className="flex items-center gap-2"><span className="text-blue-600">✓</span> Tráfico orgánico de averías y reformas en la Sierra</li>
+                <li className="flex items-center gap-2"><span className="text-blue-600">✓</span> Presupuestos en PDF emitidos en 2 minutos</li>
               </ul>
             </div>
 
@@ -65,15 +79,15 @@ export default function Home() {
                 <img src="/camperbot.png" alt="Proyecto CamperBot" className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500" />
               </div>
 
-              <div className="flex items-center gap-3 mb-6">
+              <div className="flex items-center gap-3 mb-4">
                 <span className="bg-amber-100 text-amber-800 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide">Turismo y Alquiler</span>
-                <span className="text-sm font-semibold text-gray-500">Proyecto Camper</span>
+                <span className="text-sm font-semibold text-gray-500">[[¿CLIENTE O PROYECTO PROPIO?: Ej. Proyecto propio Camper / Empresa colaboradora]]</span>
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-3">Atención al Cliente y Reservas con IA</h3>
-              <p className="text-gray-600 mb-6">
-                Desarrollo de un Asistente Virtual Inteligente para reservas de autocaravanas. El sistema resuelve el 90% de las dudas repetitivas (fianzas, seguros, mascotas, kilometraje) y guía al cliente hacia la compra 24/7 sin que el personal pierda horas al teléfono.
+              <p className="text-gray-600 mb-6 leading-relaxed">
+                Desarrollo de un Asistente Virtual Inteligente para reservas de autocaravanas. El sistema resuelve dudas repetitivas (fianzas, seguros, mascotas, kilometraje) y guía hacia la reserva 24/7 sin que se pierdan horas al teléfono.
               </p>
-              <ul className="space-y-2 text-sm font-medium text-gray-700">
+              <ul className="space-y-2 text-sm font-medium text-gray-700 pt-4">
                 <li className="flex items-center gap-2"><span className="text-blue-600">✓</span> Ahorro radical de tiempo en WhatsApp</li>
                 <li className="flex items-center gap-2"><span className="text-blue-600">✓</span> Cierre de reservas fuera de horario comercial</li>
               </ul>
