@@ -56,29 +56,17 @@ export default async function SectorPage({ params }: Props) {
       </p>
       
       <div className="bg-white p-8 sm:p-10 rounded-2xl shadow-sm border border-gray-100 max-w-3xl mx-auto text-left">
-        <h3 className="text-2xl font-bold mb-6 text-gray-900">¿Por qué trabajar con nosotros?</h3>
-        <ul className="space-y-5 text-gray-600">
-          <li className="flex gap-4 items-start">
-            <span className="text-green-500 text-xl font-bold mt-1">✓</span>
-            <div>
-              <strong className="block text-gray-900">Sin humo ni palabras raras</strong>
-              Entendemos el día a día de un {data.oficio.toLowerCase()}. Nada de métricas vanidosas, hablamos de obras, urgencias y euros en caja.
-            </div>
-          </li>
-          <li className="flex gap-4 items-start">
-            <span className="text-green-500 text-xl font-bold mt-1">✓</span>
-            <div>
-              <strong className="block text-gray-900">Ecosistemas Probados (Caso de Éxito)</strong>
-              Aplicamos el mismo sistema exacto que ya está generando decenas de llamadas semanales a otras empresas del sector.
-            </div>
-          </li>
-          <li className="flex gap-4 items-start">
-            <span className="text-green-500 text-xl font-bold mt-1">✓</span>
-            <div>
-              <strong className="block text-gray-900">Herramientas Privadas Incluidas</strong>
-              No solo te traemos al cliente. Te instalamos un generador de presupuestos automatizado para que cierres la venta en 2 minutos.
-            </div>
-          </li>
+        <h3 className="text-2xl font-bold mb-6 text-gray-900">¿Por qué nuestro sistema funciona para {data.nombre.toLowerCase()}?</h3>
+        <ul className="space-y-6 text-gray-600">
+          {data.beneficios.map((b, idx) => (
+            <li key={idx} className="flex gap-4 items-start">
+              <span className="text-green-500 text-xl font-bold mt-0.5">✓</span>
+              <div>
+                <strong className="block text-gray-900 text-base">{b.titulo}</strong>
+                <p className="text-sm text-gray-600 mt-1 leading-relaxed">{b.texto}</p>
+              </div>
+            </li>
+          ))}
         </ul>
         
         <div className="mt-10 text-center">
