@@ -31,7 +31,9 @@ export function Footer() {
           <ul className="space-y-3 text-sm font-medium">
             <li><Link href="/#casos-exito" className="hover:text-blue-400 transition-colors">Sistemas Implementados</Link></li>
             <li><Link href="/#contacto" className="hover:text-blue-400 transition-colors">Solicitar Análisis</Link></li>
-            <li><Link href="#" className="hover:text-blue-400 transition-colors">Aviso Legal y Privacidad</Link></li>
+            <li><Link href="/aviso-legal" className="hover:text-blue-400 transition-colors">Aviso Legal</Link></li>
+            <li><Link href="/politica-de-privacidad" className="hover:text-blue-400 transition-colors">Política de Privacidad</Link></li>
+            <li><Link href="/politica-de-cookies" className="hover:text-blue-400 transition-colors">Política de Cookies</Link></li>
           </ul>
         </div>
       </div>
