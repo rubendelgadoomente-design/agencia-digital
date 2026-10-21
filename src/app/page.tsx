@@ -11,8 +11,45 @@ export const metadata: Metadata = {
 };
 
 export default function Home() {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Motor Local",
+    "url": "https://www.agenciamotorlocal.es",
+    "telephone": "[[TELÉFONO]]",
+    "email": "[[EMAIL]]",
+    "image": "[[IMAGEN OG]]",
+    "priceRange": "€€",
+    "description": "Agencia de captación local, SEO en Google Maps y herramientas de automatización para oficios y clínicas de la Sierra de Madrid.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Manzanares el Real",
+      "addressRegion": "Madrid",
+      "addressCountry": "ES"
+    },
+    "founder": {
+      "@type": "Person",
+      "name": "[[NOMBRE]]"
+    },
+    "areaServed": [
+      { "@type": "AdministrativeArea", "name": "Colmenar Viejo" },
+      { "@type": "AdministrativeArea", "name": "Tres Cantos" },
+      { "@type": "AdministrativeArea", "name": "Soto del Real" },
+      { "@type": "AdministrativeArea", "name": "Manzanares el Real" },
+      { "@type": "AdministrativeArea", "name": "Miraflores de la Sierra" },
+      { "@type": "AdministrativeArea", "name": "Moralzarzal" },
+      { "@type": "AdministrativeArea", "name": "Collado Villalba" }
+    ]
+  };
+
   return (
     <div className="bg-gray-50">
+      {/* Datos estructurados JSON-LD Schema.org */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+
       {/* Hero Section */}
       <section className="mx-auto max-w-5xl px-4 py-24 text-center">
         <div className="inline-block bg-blue-100 text-blue-800 px-4 py-1.5 rounded-full text-sm font-bold uppercase tracking-wider mb-6">
