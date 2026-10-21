@@ -1,5 +1,14 @@
+import { Metadata } from "next";
 import Link from "next/link";
 import { ContactForm } from "@/components/ContactForm";
+
+export const metadata: Metadata = {
+  title: "Agencia de captación local en la Sierra de Madrid | Motor Local",
+  description: "SEO local, Google Maps y webs que convierten para oficios y clínicas de Colmenar Viejo, Soto del Real, Manzanares, Moralzarzal y Collado Villalba. Análisis de tu zona gratis.",
+  alternates: {
+    canonical: "https://www.agenciamotorlocal.es",
+  },
+};
 
 export default function Home() {
   return (
@@ -7,22 +16,21 @@ export default function Home() {
       {/* Hero Section */}
       <section className="mx-auto max-w-5xl px-4 py-24 text-center">
         <div className="inline-block bg-blue-100 text-blue-800 px-4 py-1.5 rounded-full text-sm font-bold uppercase tracking-wider mb-6">
-          Agencia para Negocios Locales
+          Sierra de Madrid • Negocios y Profesionales Locales
         </div>
-        <h1 className="text-5xl font-extrabold tracking-tight text-gray-900 sm:text-6xl mb-6">
-          Tu competencia se está llevando a los clientes de tu zona. <br />
-          <span className="text-blue-600">Nosotros te los traemos a ti.</span>
+        <h1 className="text-4xl sm:text-6xl font-extrabold tracking-tight text-gray-900 mb-6 leading-tight">
+          Captación de clientes para oficios y clínicas de la Sierra de Madrid
         </h1>
         
-        <p className="text-xl text-gray-600 mb-10 max-w-3xl mx-auto">
-          Sistemas de captación, SEO Local y herramientas SaaS para <strong>Empresas de Reformas, Instaladores y Oficios</strong>. Olvídate de perseguir clientes, haz que te llamen ellos.
+        <p className="text-xl text-gray-600 mb-10 max-w-3xl mx-auto leading-relaxed">
+          Posicionamiento en Google Maps, webs que convierten y herramientas para cerrar presupuestos. Probado en mi propia empresa de reparaciones.
         </p>
         
-        <div className="flex justify-center gap-4">
-          <a href="#contacto" className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3.5 px-8 rounded-lg transition-colors shadow-lg">
-            Quiero dominar mi zona
+        <div className="flex flex-col sm:flex-row justify-center gap-4">
+          <a href="#contacto" className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-8 rounded-xl transition-colors shadow-lg text-lg">
+            Quiero el análisis gratuito de mi zona
           </a>
-          <a href="#casos-exito" className="bg-white border border-gray-300 hover:bg-gray-50 text-gray-800 font-semibold py-3.5 px-8 rounded-lg transition-colors flex items-center justify-center">
+          <a href="#casos-exito" className="bg-white border border-gray-300 hover:bg-gray-50 text-gray-800 font-semibold py-4 px-8 rounded-xl transition-colors flex items-center justify-center">
             Ver Sistemas Implementados
           </a>
         </div>
