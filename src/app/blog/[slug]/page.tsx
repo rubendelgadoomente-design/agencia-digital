@@ -1,4 +1,4 @@
-import { notFound } from 'next';
+import { notFound } from 'next/navigation';
 import { Metadata } from 'next';
 import Link from 'next/link';
 import { articulos } from '@/data/articulos';
@@ -37,7 +37,9 @@ export default async function ArticuloBorradorPage({ params }: Props) {
   const resolved = await params;
   const articulo = articulos.find((a) => a.slug === resolved.slug);
 
-  if (!articulo) notFound();
+  if (!articulo) {
+    notFound();
+  }
 
   return (
     <div className="bg-white min-h-screen py-16 px-4 sm:px-6 lg:px-8">

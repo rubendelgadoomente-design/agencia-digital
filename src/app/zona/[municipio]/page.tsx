@@ -1,4 +1,4 @@
-import { notFound } from 'next';
+import { notFound } from 'next/navigation';
 import { Metadata } from 'next';
 import Link from 'next/link';
 import { ContactForm } from '@/components/ContactForm';
@@ -45,7 +45,9 @@ export default async function MunicipioPage({ params }: Props) {
   const resolved = await params;
   const municipio = municipiosValidos.find((m) => m.slug === resolved.municipio);
 
-  if (!municipio) notFound();
+  if (!municipio) {
+    notFound();
+  }
 
   return (
     <div className="bg-gray-50 min-h-screen py-16 px-4 sm:px-6 lg:px-8">
