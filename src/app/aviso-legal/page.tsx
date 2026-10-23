@@ -13,13 +13,11 @@ export default function AvisoLegalPage() {
   return (
     <div className="bg-white min-h-screen py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-3xl mx-auto prose prose-slate">
-        <div className="bg-amber-50 border-l-4 border-amber-400 p-4 mb-8 text-sm text-amber-800">
-          <strong>Aviso legal importante:</strong> Este texto es una plantilla estándar conforme a la LSSI-CE y la normativa española aplicable a servicios de marketing digital y desarrollo web. [[NOTA: UN ABOGADO DEBE REVISAR ESTE TEXTO ANTES DE SU APLICACIÓN DEFINITIVA]].
-        </div>
+        {/* Nota: Un abogado debe revisar este texto antes de su aplicación definitiva */}
 
         <h1 className="text-3xl font-extrabold text-gray-900 mb-6">Aviso Legal</h1>
 
-        <p className="text-sm text-gray-500 mb-8">Última actualización: 21 de octubre de 2026</p>
+        <p className="text-sm text-gray-500 mb-8">Última actualización: 23 de octubre de 2026</p>
 
         <section className="space-y-6 text-gray-700 leading-relaxed">
           <h2 className="text-xl font-bold text-gray-900">1. Datos Identificativos del Responsable</h2>
@@ -27,11 +25,11 @@ export default function AvisoLegalPage() {
             En cumplimiento del artículo 10 de la Ley 34/2002, de 11 de julio, de Servicios de la Sociedad de la Información y de Comercio Electrónico (LSSI-CE), se informa a los usuarios de los datos identificativos del titular de este sitio web:
           </p>
           <ul className="list-disc pl-5 space-y-2">
-            <li><strong>Titular / Razón Social:</strong> [[NOMBRE O RAZÓN SOCIAL]]</li>
-            <li><strong>NIF/CIF:</strong> [[NIF]]</li>
-            <li><strong>Domicilio de actividad:</strong> [[DIRECCIÓN]] (Sierra de Madrid, España)</li>
-            <li><strong>Correo electrónico de contacto:</strong> [[EMAIL]]</li>
-            <li><strong>Teléfono de contacto:</strong> [[TELÉFONO]]</li>
+            <li><strong>Titular / Razón Social:</strong> Rubén Delgado Omente</li>
+            <li><strong>NIF:</strong> 01934982S</li>
+            <li><strong>Domicilio de actividad:</strong> [[DIRECCIÓN]]</li>
+            <li><strong>Correo electrónico de contacto:</strong> <a href="mailto:hola@agenciamotorlocal.es" className="text-blue-600 underline">hola@agenciamotorlocal.es</a></li>
+            <li><strong>Teléfono de contacto:</strong> <a href="tel:+34616063682" className="text-blue-600 underline">616 06 36 82</a></li>
             <li><strong>Nombre comercial:</strong> Motor Local</li>
             <li><strong>Dominio web:</strong> https://www.agenciamotorlocal.es</li>
           </ul>
@@ -51,7 +49,7 @@ export default function AvisoLegalPage() {
 
           <h2 className="text-xl font-bold text-gray-900">4. Propiedad Intelectual e Industrial</h2>
           <p>
-            Todos los contenidos de este sitio web, incluyendo marcas, nombres comerciales, logotipos, código fuente, estructura de navegación, bases de datos y diseños, son titularidad de [[NOMBRE O RAZÓN SOCIAL]] o de terceros que han autorizado expresamente su uso, estando protegidos por la legislación española e internacional sobre propiedad intelectual e industrial.
+            Todos los contenidos de este sitio web, incluyendo marcas, nombres comerciales, logotipos, código fuente, estructura de navegación, bases de datos y diseños, son titularidad de Rubén Delgado Omente o de terceros que han autorizado expresamente su uso, estando protegidos por la legislación española e internacional sobre propiedad intelectual e industrial.
           </p>
 
           <h2 className="text-xl font-bold text-gray-900">5. Exclusión de Garantías y Responsabilidad</h2>
@@ -64,7 +62,7 @@ export default function AvisoLegalPage() {
 
           <h2 className="text-xl font-bold text-gray-900">6. Legislación Aplicable y Jurisdicción</h2>
           <p>
-            Para la resolución de cualquier controversia o cuestión litigiosa relativa a este sitio web o a las actividades en él desarrolladas, será de aplicación la legislación española vigente, sometiéndose las partes expresamente a la jurisdicción de los Juzgados y Tribunales competentes de [[JURISDICCIÓN / PARTIDO JUDICIAL, EJ: COLMENAR VIEJO O MADRID]].
+            Para la resolución de cualquier controversia serán competentes los juzgados y tribunales que correspondan conforme a la normativa aplicable. Cuando el usuario tenga la condición de consumidor, los del lugar de su domicilio.
           </p>
         </section>
 

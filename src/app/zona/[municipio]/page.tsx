@@ -4,15 +4,15 @@ import Link from 'next/link';
 import { ContactForm } from '@/components/ContactForm';
 
 export const municipiosValidos = [
-  { slug: 'colmenar-viejo', nombre: 'Colmenar Viejo' },
-  { slug: 'soto-del-real', nombre: 'Soto del Real' },
-  { slug: 'manzanares-el-real', nombre: 'Manzanares el Real' },
-  { slug: 'moralzarzal', nombre: 'Moralzarzal' },
-  { slug: 'collado-villalba', nombre: 'Collado Villalba' },
+  { slug: 'colmenar-viejo', nombre: 'Colmenar Viejo', listo: false },
+  { slug: 'soto-del-real', nombre: 'Soto del Real', listo: false },
+  { slug: 'manzanares-el-real', nombre: 'Manzanares el Real', listo: false },
+  { slug: 'moralzarzal', nombre: 'Moralzarzal', listo: false },
+  { slug: 'collado-villalba', nombre: 'Collado Villalba', listo: false },
 ];
 
 export function generateStaticParams() {
-  return municipiosValidos.map((m) => ({
+  return municipiosValidos.filter((m) => m.listo).map((m) => ({
     municipio: m.slug,
   }));
 }
@@ -23,7 +23,7 @@ type Props = {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const resolved = await params;
-  const municipio = municipiosValidos.find((m) => m.slug === resolved.municipio);
+  const municipio = municipiosValidos.find((m) => m.slug === resolved.municipio && m.listo);
 
   if (!municipio) return { title: 'Municipio no encontrado | Motor Local' };
 
@@ -43,7 +43,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 export default async function MunicipioPage({ params }: Props) {
   const resolved = await params;
-  const municipio = municipiosValidos.find((m) => m.slug === resolved.municipio);
+  const municipio = municipiosValidos.find((m) => m.slug === resolved.municipio && m.listo);
 
   if (!municipio) {
     notFound();
@@ -77,7 +77,7 @@ export default async function MunicipioPage({ params }: Props) {
         <section className="bg-white rounded-2xl p-8 border border-gray-200 shadow-sm mb-10 space-y-4">
           <h2 className="text-xl font-bold text-gray-900">Situación del mercado local en {municipio.nombre}</h2>
           <div className="p-4 bg-gray-50 border border-dashed border-gray-300 rounded-xl text-gray-600 text-sm leading-relaxed">
-            <p className="font-semibold text-gray-800 mb-2">[[CONTENIDO ÚNICO DE ESTE MUNICIPIO: Introducción]]</p>
+            <p className="font-semibold text-gray-800 mb-2">Contenido pendiente de redacción: Introducción</p>
             <p>
               [Espacio reservado para describir la tipología de viviendas (chalets, urbanizaciones, casco urbano), cómo busca el vecino de {municipio.nombre} y por qué las empresas de fuera se están llevando las llamadas si no hay presencia local fuerte].
             </p>
@@ -88,7 +88,7 @@ export default async function MunicipioPage({ params }: Props) {
         <section className="bg-white rounded-2xl p-8 border border-gray-200 shadow-sm mb-10 space-y-4">
           <h2 className="text-xl font-bold text-gray-900">Sectores prioritarios en {municipio.nombre}</h2>
           <div className="p-4 bg-gray-50 border border-dashed border-gray-300 rounded-xl text-gray-600 text-sm leading-relaxed">
-            <p className="font-semibold text-gray-800 mb-2">[[CONTENIDO ÚNICO DE ESTE MUNICIPIO: Sectores destacados]]</p>
+            <p className="font-semibold text-gray-800 mb-2">Contenido pendiente de redacción: Sectores destacados</p>
             <p>
               [Espacio reservado para detallar la demanda específica en {municipio.nombre}: reformas de chalets, averías urgentes de fontanería, mantenimiento de climatización/aerotermia o pacientes para clínicas dentales y de fisioterapia].
             </p>
@@ -99,9 +99,9 @@ export default async function MunicipioPage({ params }: Props) {
         <section className="bg-white rounded-2xl p-8 border border-gray-200 shadow-sm mb-10 space-y-4">
           <h2 className="text-xl font-bold text-gray-900">Ejemplo de búsqueda real en Google y Google Maps</h2>
           <div className="p-4 bg-gray-50 border border-dashed border-gray-300 rounded-xl text-gray-600 text-sm leading-relaxed">
-            <p className="font-semibold text-gray-800 mb-2">[[CONTENIDO ÚNICO DE ESTE MUNICIPIO: Ejemplo de búsqueda real]]</p>
+            <p className="font-semibold text-gray-800 mb-2">Contenido pendiente de redacción: Ejemplo de búsqueda real</p>
             <p>
-              [Espacio reservado para incluir una captura o desglose de qué sale al buscar por ejemplo: "reformas {municipio.nombre}" o "fisioterapia {municipio.nombre}", mostrando qué competidor sale en el Top 3 y cuántas llamadas mensuales genera esa posición].
+              [Espacio reservado para incluir una captura o desglose de qué sale al buscar por ejemplo: &quot;reformas {municipio.nombre}&quot; o &quot;fisioterapia {municipio.nombre}&quot;, mostrando qué competidor sale en el Top 3 y cuántas llamadas mensuales genera esa posición].
             </p>
           </div>
         </section>

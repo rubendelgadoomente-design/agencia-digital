@@ -54,12 +54,8 @@ export default function HerramientasPage() {
               </p>
             </div>
 
-            {/* Espacio para Captura con marcador */}
-            <div className="w-full aspect-[4/3] bg-gray-100 rounded-2xl border-2 border-dashed border-gray-300 flex flex-col items-center justify-center p-6 text-center shadow-inner">
-              <span className="text-4xl mb-3">📄</span>
-              <p className="font-bold text-gray-800 text-sm">[[CAPTURA GENERADOR: Vista de la interfaz móvil del generador de presupuestos o ejemplo de PDF generado para Reparaciones Manzanares]]</p>
-              <p className="text-xs text-gray-500 mt-2">Presupuesto con logotipo, partidas y firma digital</p>
-            </div>
+            {/* Espacio para Captura (pendiente) */}
+            <div className="w-full aspect-[4/3] bg-gradient-to-br from-slate-100 to-slate-200 rounded-2xl border border-slate-200 shadow-inner" />
           </div>
 
           {/* Cómo funciona en 3 pasos */}
@@ -79,7 +75,7 @@ export default function HerramientasPage() {
               <div className="space-y-1">
                 <span className="w-8 h-8 rounded-full bg-blue-600 text-white font-bold flex items-center justify-center text-sm mb-2">3</span>
                 <h4 className="font-semibold text-gray-900 text-sm">Envío por WhatsApp</h4>
-                <p className="text-xs text-gray-600">Envías el enlace al PDF al cliente por WhatsApp antes de arrancar la furgoneta. [[TIEMPO MEDIO DE GENERACIÓN: EJ. MENOS DE 2 MINUTOS]].</p>
+                <p className="text-xs text-gray-600">Envías el enlace al PDF al cliente por WhatsApp antes de arrancar la furgoneta. Unos 2 minutos.</p>
               </div>
             </div>
           </div>
@@ -120,12 +116,8 @@ export default function HerramientasPage() {
               </p>
             </div>
 
-            {/* Espacio para Captura con marcador */}
-            <div className="w-full aspect-[4/3] bg-gray-100 rounded-2xl border-2 border-dashed border-gray-300 flex flex-col items-center justify-center p-6 text-center shadow-inner">
-              <span className="text-4xl mb-3">🤖</span>
-              <p className="font-bold text-gray-800 text-sm">[[CAPTURA ASISTENTE: Captura de pantalla de una conversación real de WhatsApp resolviendo dudas y guiando hacia la reserva o cita]]</p>
-              <p className="text-xs text-gray-500 mt-2">Interacción fluida entrenada con las respuestas de tu negocio</p>
-            </div>
+            {/* Espacio para Captura (pendiente) */}
+            <div className="w-full aspect-[4/3] bg-gradient-to-br from-slate-100 to-slate-200 rounded-2xl border border-slate-200 shadow-inner" />
           </div>
 
           {/* Cómo funciona en 3 pasos */}
@@ -145,7 +137,7 @@ export default function HerramientasPage() {
               <div className="space-y-1">
                 <span className="w-8 h-8 rounded-full bg-amber-600 text-white font-bold flex items-center justify-center text-sm mb-2">3</span>
                 <h4 className="font-semibold text-gray-900 text-sm">Petición de cita en caliente</h4>
-                <p className="text-xs text-gray-600">Recoge nombre, servicio requerido y franja horaria, avisándote para que solo tengas que confirmar. [[PORCENTAJE DUDAS RESUELTAS AUTOMÁTICAMENTE]].</p>
+                <p className="text-xs text-gray-600">Recoge nombre, servicio requerido y franja horaria, avisándote para que solo tengas que confirmar.</p>
               </div>
             </div>
           </div>

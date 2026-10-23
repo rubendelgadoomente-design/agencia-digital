@@ -5,7 +5,7 @@ import Script from 'next/script';
 
 export function GoogleAnalytics() {
   const [hasConsent, setHasConsent] = useState(false);
-  const gaId = "[[GA4_ID]]";
+  const gaId = process.env.NEXT_PUBLIC_GA4_ID;
 
   useEffect(() => {
     const checkConsent = () => {
@@ -22,8 +22,8 @@ export function GoogleAnalytics() {
     return () => window.removeEventListener('cookie_consent_updated', checkConsent);
   }, []);
 
-  // No cargar nada si el usuario no ha dado consentimiento expreso
-  if (!hasConsent || !gaId || gaId.includes('GA4_ID')) {
+  // No cargar nada si no hay ID configurado o si el usuario no ha dado consentimiento
+  if (!gaId || !hasConsent) {
     return null;
   }
 

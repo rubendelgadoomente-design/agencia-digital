@@ -195,10 +195,10 @@ export function ContactForm() {
             {/* Información básica de protección de datos (Primera Capa RGPD) */}
             <div className="md:col-span-2 mt-6 pt-6 border-t border-gray-800 text-[11px] text-gray-400 leading-relaxed space-y-1 bg-gray-950/40 p-4 rounded-xl">
               <p className="font-semibold text-gray-300 text-xs mb-1">Información básica sobre protección de datos:</p>
-              <p><strong>Responsable:</strong> [[NOMBRE O RAZÓN SOCIAL]] (Motor Local).</p>
+              <p><strong>Responsable:</strong> Rubén Delgado Omente (Motor Local).</p>
               <p><strong>Finalidad:</strong> Atender su solicitud de contacto y remitirle el análisis de posicionamiento local de su zona.</p>
               <p><strong>Legitimación:</strong> Consentimiento del interesado (art. 6.1.a RGPD) al enviar este formulario.</p>
-              <p><strong>Destinatarios:</strong> Encargado de tratamiento Web3Forms (plataforma técnica de recepción de formularios).</p>
+              <p><strong>Destinatarios:</strong> Encargado de tratamiento Web3Forms (plataforma técnica de recepción de formularios). Web3Forms puede tratar los datos fuera del EEE con cláusulas contractuales tipo.</p>
               <p><strong>Derechos:</strong> Acceder, rectificar y suprimir los datos, así como otros derechos explicados en la{' '}
                 <Link href="/politica-de-privacidad" target="_blank" className="text-blue-400 underline">
                   Política de Privacidad

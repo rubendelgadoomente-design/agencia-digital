@@ -11,7 +11,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/quien-soy`, lastModified, changeFrequency: 'monthly', priority: 0.8 },
     { url: `${baseUrl}/herramientas`, lastModified, changeFrequency: 'monthly', priority: 0.8 },
     { url: `${baseUrl}/precios`, lastModified, changeFrequency: 'monthly', priority: 0.8 },
-    { url: `${baseUrl}/blog`, lastModified, changeFrequency: 'weekly', priority: 0.7 },
     { url: `${baseUrl}/aviso-legal`, lastModified, changeFrequency: 'yearly', priority: 0.3 },
     { url: `${baseUrl}/politica-de-privacidad`, lastModified, changeFrequency: 'yearly', priority: 0.3 },
     { url: `${baseUrl}/politica-de-cookies`, lastModified, changeFrequency: 'yearly', priority: 0.3 },

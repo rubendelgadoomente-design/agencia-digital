@@ -13,9 +13,7 @@ export default function PoliticaPrivacidadPage() {
   return (
     <div className="bg-white min-h-screen py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-3xl mx-auto prose prose-slate">
-        <div className="bg-amber-50 border-l-4 border-amber-400 p-4 mb-8 text-sm text-amber-800">
-          <strong>Aviso legal importante:</strong> Texto redactado conforme al Reglamento (UE) 2016/679 (RGPD) y a la Ley Orgánica 3/2018 (LOPDGDD). [[NOTA: UN ABOGADO DEBE REVISAR ESTE TEXTO ANTES DE SU APLICACIÓN DEFINITIVA]].
-        </div>
+        {/* NOTA: Un abogado debe revisar este texto antes de su aplicación definitiva. */}
 
         <h1 className="text-3xl font-extrabold text-gray-900 mb-6">Política de Privacidad</h1>
 
@@ -24,11 +22,11 @@ export default function PoliticaPrivacidadPage() {
         <section className="space-y-6 text-gray-700 leading-relaxed">
           <h2 className="text-xl font-bold text-gray-900">1. Responsable del Tratamiento de sus Datos</h2>
           <ul className="list-disc pl-5 space-y-2">
-            <li><strong>Identidad:</strong> [[NOMBRE O RAZÓN SOCIAL]] (Motor Local)</li>
-            <li><strong>NIF/CIF:</strong> [[NIF]]</li>
+            <li><strong>Identidad:</strong> Rubén Delgado Omente (Motor Local)</li>
+            <li><strong>NIF/CIF:</strong> 01934982S</li>
             <li><strong>Dirección postal:</strong> [[DIRECCIÓN]] (Madrid, España)</li>
-            <li><strong>Correo electrónico de contacto:</strong> [[EMAIL]]</li>
-            <li><strong>Teléfono de contacto:</strong> [[TELÉFONO]]</li>
+            <li><strong>Correo electrónico de contacto:</strong> <a href="mailto:hola@agenciamotorlocal.es" className="text-blue-600 hover:underline">hola@agenciamotorlocal.es</a></li>
+            <li><strong>Teléfono de contacto:</strong> <a href="tel:+34616063682" className="text-blue-600 hover:underline">616 06 36 82</a></li>
           </ul>
 
           <h2 className="text-xl font-bold text-gray-900">2. Finalidad del Tratamiento de los Datos</h2>
@@ -55,7 +53,7 @@ export default function PoliticaPrivacidadPage() {
           </p>
           <ul className="list-disc pl-5 space-y-2">
             <li>
-              <strong>Web3Forms:</strong> Proveedor tecnológico utilizado para el procesamiento y reenvío seguro de los datos consignados en el formulario web hacia nuestro buzón de correo. [[REVISAR TRANSFERENCIA INTERNACIONAL WEB3FORMS: Confirmar si Web3Forms procesa datos dentro del EEE o en EE.UU. bajo el marco Data Privacy Framework (DPF) o cláusulas contractuales tipo]].
+              <strong>Web3Forms:</strong> Proveedor tecnológico utilizado para el procesamiento y reenvío seguro de los datos consignados en el formulario web hacia nuestro buzón de correo. Web3Forms puede tratar los datos en servidores situados fuera del Espacio Económico Europeo. Estas transferencias internacionales se amparan en las cláusulas contractuales tipo aprobadas por la Comisión Europea (art. 46.2.c RGPD).
             </li>
             <li>
               <strong>Vercel Inc.:</strong> Proveedor de infraestructura y alojamiento web de alto rendimiento.
@@ -83,7 +81,7 @@ export default function PoliticaPrivacidadPage() {
             <li>Portabilidad de los datos.</li>
           </ul>
           <p>
-            Para ejercer estos derechos, puede remitir una solicitud por escrito acompañada de una copia de su documento de identidad a [[EMAIL]] indicando en el asunto "Protección de Datos". Asimismo, tiene derecho a presentar una reclamación ante la Agencia Española de Protección de Datos (AEPD, <a href="https://www.aepd.es" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">www.aepd.es</a>) si considera vulnerados sus derechos.
+            Para ejercer estos derechos, puede remitir una solicitud por escrito acompañada de una copia de su documento de identidad a <a href="mailto:hola@agenciamotorlocal.es" className="text-blue-600 hover:underline">hola@agenciamotorlocal.es</a> indicando en el asunto &quot;Protección de Datos&quot;. Asimismo, tiene derecho a presentar una reclamación ante la Agencia Española de Protección de Datos (AEPD, <a href="https://www.aepd.es" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">www.aepd.es</a>) si considera vulnerados sus derechos.
           </p>
         </section>
 

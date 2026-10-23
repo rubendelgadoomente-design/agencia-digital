@@ -26,20 +26,13 @@ export const metadata: Metadata = {
     siteName: "Motor Local",
     title: "Agencia de captación local en la Sierra de Madrid | Motor Local",
     description: "SEO local, Google Maps y webs que convierten para oficios y clínicas de Colmenar Viejo, Soto del Real, Manzanares, Moralzarzal y Collado Villalba. Análisis de tu zona gratis.",
-    images: [
-      {
-        url: "[[IMAGEN OG: https://www.agenciamotorlocal.es/og-image.jpg (1200x630)]]",
-        width: 1200,
-        height: 630,
-        alt: "Motor Local - Agencia de Captación Local en la Sierra de Madrid",
-      },
-    ],
+    // TODO og-image.jpg 1200x630
   },
   twitter: {
     card: "summary_large_image",
     title: "Agencia de captación local en la Sierra de Madrid | Motor Local",
     description: "SEO local, Google Maps y webs que convierten para oficios y clínicas de la Sierra de Madrid.",
-    images: ["[[IMAGEN OG: https://www.agenciamotorlocal.es/og-image.jpg (1200x630)]]"],
+    // TODO og-image.jpg 1200x630
   },
 };
 

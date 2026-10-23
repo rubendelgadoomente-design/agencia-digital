@@ -21,26 +21,26 @@ export function Navbar() {
           </span>
           <div className="flex items-center gap-4 ml-auto">
             <a
-              href="tel:[[TELÉFONO]]"
+              href="tel:+34616063682"
               onClick={() => trackContact('tel')}
               className="hover:text-blue-400 transition-colors flex items-center gap-1 font-medium"
             >
-              <span>📞</span> [[TELÉFONO]]
+              <span>📞</span> 616 06 36 82
             </a>
             <a
-              href="https://wa.me/34XXXXXXXXX?text=Hola,%20quiero%20informaci%C3%B3n%20sobre%20Motor%20Local"
+              href="https://wa.me/34616063682?text=Hola,%20quiero%20informaci%C3%B3n%20sobre%20Motor%20Local"
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => trackContact('whatsapp')}
               className="hover:text-green-400 transition-colors flex items-center gap-1 font-medium"
             >
-              <span>💬</span> WhatsApp [[WHATSAPP]]
+              <span>💬</span> WhatsApp
             </a>
             <a
-              href="mailto:[[EMAIL]]"
+              href="mailto:hola@agenciamotorlocal.es"
               className="hover:text-blue-400 transition-colors hidden md:flex items-center gap-1"
             >
-              <span>✉️</span> [[EMAIL]]
+              <span>✉️</span> hola@agenciamotorlocal.es
             </a>
           </div>
         </div>

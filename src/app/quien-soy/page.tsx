@@ -22,14 +22,10 @@ export default function QuienSoyPage() {
         <div className="grid md:grid-cols-3 gap-12 items-start">
           {/* Columna Foto */}
           <div className="md:col-span-1">
-            <div className="w-full aspect-square bg-gray-100 rounded-2xl border-2 border-dashed border-gray-300 flex flex-col items-center justify-center p-6 text-center shadow-sm">
-              <span className="text-4xl mb-3">👤</span>
-              <p className="font-bold text-gray-800 text-sm">[[FOTO: Espacio para fotografía profesional o en el taller / furgoneta]]</p>
-              <p className="text-xs text-gray-500 mt-2">Imagen de [[NOMBRE]]</p>
-            </div>
+            {/* Foto pendiente: public/ruben.jpg */}
             
-            <div className="mt-6 bg-gray-50 rounded-xl p-4 border border-gray-200 text-xs text-gray-600 space-y-2">
-              <p><strong>Fundador:</strong> [[NOMBRE]]</p>
+            <div className="bg-gray-50 rounded-xl p-6 border border-gray-200 text-sm text-gray-600 space-y-3">
+              <p><strong>Fundador:</strong> Rubén Delgado</p>
               <p><strong>Base:</strong> Manzanares el Real (Madrid)</p>
               <p><strong>Negocio propio:</strong> Reparaciones Manzanares</p>
               <p><strong>Especialidad:</strong> SEO Local y Automatización</p>
@@ -46,7 +42,7 @@ export default function QuienSoyPage() {
             </h1>
 
             <div className="bg-blue-50 border-l-4 border-blue-600 p-6 rounded-r-xl text-gray-800 font-medium">
-              "Soy [[NOMBRE]] y tengo una empresa de reparaciones en Manzanares el Real, Reparaciones Manzanares. Cuando empecé, dependía del boca a boca. Monté para mi propio negocio un sistema de posicionamiento local y un generador de presupuestos, y empezamos a recibir llamadas cada semana. Motor Local nace para hacer lo mismo con otros oficios y clínicas de la Sierra de Madrid: con sistemas probados en un negocio real, no con promesas."
+              &quot;Soy Rubén Delgado y tengo una empresa de reparaciones en Manzanares el Real, Reparaciones Manzanares. Cuando empecé, dependía del boca a boca. Monté para mi propio negocio un sistema de posicionamiento local y un generador de presupuestos, y empezamos a recibir llamadas cada semana. Motor Local nace para hacer lo mismo con otros oficios y clínicas de la Sierra de Madrid: con sistemas probados en un negocio real, no con promesas.&quot;
             </div>
 
             <h2 className="text-2xl font-bold text-gray-900 pt-4">¿Por qué confiar en Motor Local?</h2>

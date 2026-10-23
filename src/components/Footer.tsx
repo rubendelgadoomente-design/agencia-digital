@@ -34,30 +34,30 @@ export function Footer() {
           <ul className="space-y-3 text-sm">
             <li>
               <a
-                href="tel:[[TELÉFONO]]"
+                href="tel:+34616063682"
                 onClick={() => trackContact('tel')}
                 className="hover:text-blue-400 transition-colors flex items-center gap-2"
               >
-                <span>📞</span> [[TELÉFONO]]
+                <span>📞</span> 616 06 36 82
               </a>
             </li>
             <li>
               <a
-                href="https://wa.me/34XXXXXXXXX?text=Hola,%20quiero%20informaci%C3%B3n%20sobre%20Motor%20Local"
+                href="https://wa.me/34616063682?text=Hola,%20quiero%20informaci%C3%B3n%20sobre%20Motor%20Local"
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => trackContact('whatsapp')}
                 className="hover:text-green-400 transition-colors flex items-center gap-2"
               >
-                <span>💬</span> WhatsApp [[WHATSAPP]]
+                <span>💬</span> WhatsApp
               </a>
             </li>
             <li>
               <a
-                href="mailto:[[EMAIL]]"
+                href="mailto:hola@agenciamotorlocal.es"
                 className="hover:text-blue-400 transition-colors flex items-center gap-2"
               >
-                <span>✉️</span> [[EMAIL]]
+                <span>✉️</span> hola@agenciamotorlocal.es
               </a>
             </li>
           </ul>
@@ -81,7 +81,6 @@ export function Footer() {
             <li><Link href="/quien-soy" className="hover:text-blue-400 transition-colors">Quién Soy</Link></li>
             <li><Link href="/herramientas" className="hover:text-blue-400 transition-colors">Herramientas SaaS</Link></li>
             <li><Link href="/precios" className="hover:text-blue-400 transition-colors">Planes y Precios</Link></li>
-            <li><Link href="/blog" className="hover:text-blue-400 transition-colors">Blog</Link></li>
             <li className="pt-2 border-t border-gray-800/80"><Link href="/aviso-legal" className="text-xs text-gray-400 hover:text-white transition-colors">Aviso Legal</Link></li>
             <li><Link href="/politica-de-privacidad" className="text-xs text-gray-400 hover:text-white transition-colors">Política de Privacidad</Link></li>
             <li><Link href="/politica-de-cookies" className="text-xs text-gray-400 hover:text-white transition-colors">Política de Cookies</Link></li>
@@ -90,7 +89,7 @@ export function Footer() {
       </div>
       
       <div className="max-w-6xl mx-auto px-4 mt-12 pt-8 border-t border-gray-800/60 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-gray-500">
-        <p>© {new Date().getFullYear()} Motor Local. [[NOMBRE O RAZÓN SOCIAL]] - NIF: [[NIF]]. Todos los derechos reservados.</p>
+        <p>© {new Date().getFullYear()} Motor Local. Rubén Delgado Omente - NIF: 01934982S. Todos los derechos reservados.</p>
         <p>Sistemas de Captación Local • Sierra de Madrid</p>
       </div>
     </footer>

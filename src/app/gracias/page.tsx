@@ -51,12 +51,12 @@ export default function GraciasPage() {
             ¿Tienes prisa o quieres comentar algún detalle urgente sobre tu negocio?
           </p>
           <a
-            href="https://wa.me/34XXXXXXXXX?text=Hola,%20acabo%20de%20enviar%20el%20formulario%20en%20Motor%20Local%20para%20el%20an%C3%A1lisis%20de%20mi%20zona"
+            href="https://wa.me/34616063682?text=Hola,%20acabo%20de%20enviar%20el%20formulario%20en%20Motor%20Local%20para%20el%20an%C3%A1lisis%20de%20mi%20zona"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center gap-3 w-full sm:w-auto bg-green-600 hover:bg-green-500 text-white font-bold py-3.5 px-8 rounded-xl transition-colors shadow-lg"
           >
-            <span>💬</span> Hablar por WhatsApp ahora con [[NOMBRE]] ([[WHATSAPP]])
+            <span>💬</span> Hablar por WhatsApp ahora con Rubén Delgado (616 06 36 82)
           </a>
         </div>
 

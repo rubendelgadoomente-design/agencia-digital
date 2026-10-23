@@ -16,9 +16,8 @@ export default function Home() {
     "@type": "ProfessionalService",
     "name": "Motor Local",
     "url": "https://www.agenciamotorlocal.es",
-    "telephone": "[[TELÉFONO]]",
-    "email": "[[EMAIL]]",
-    "image": "[[IMAGEN OG]]",
+    "telephone": "+34616063682",
+    "email": "hola@agenciamotorlocal.es",
     "priceRange": "€€",
     "description": "Agencia de captación local, SEO en Google Maps y herramientas de automatización para oficios y clínicas de la Sierra de Madrid.",
     "address": {
@@ -29,7 +28,7 @@ export default function Home() {
     },
     "founder": {
       "@type": "Person",
-      "name": "[[NOMBRE]]"
+      "name": "Rubén Delgado"
     },
     "areaServed": [
       { "@type": "AdministrativeArea", "name": "Colmenar Viejo" },
@@ -100,20 +99,20 @@ export default function Home() {
               <div className="grid grid-cols-3 gap-3 p-4 bg-white rounded-xl border border-gray-200 text-center mb-6">
                 <div>
                   <span className="block text-xs text-gray-400 uppercase font-semibold">Antes</span>
-                  <span className="text-sm font-bold text-gray-700">[[LLAMADAS/MES ANTES]]</span>
+                  <span className="text-sm font-bold text-gray-700">7 llamadas/mes (jun. 2026)</span>
                 </div>
                 <div className="border-x border-gray-100">
                   <span className="block text-xs text-blue-500 uppercase font-semibold">Ahora</span>
-                  <span className="text-sm font-bold text-blue-600">[[LLAMADAS/MES AHORA]]</span>
+                  <span className="text-sm font-bold text-blue-600">21 llamadas/mes (sep. 2026)</span>
                 </div>
                 <div>
                   <span className="block text-xs text-green-500 uppercase font-semibold">Google Maps</span>
-                  <span className="text-sm font-bold text-green-600">[[POSICIÓN EN MAPS]]</span>
+                  <span className="text-sm font-bold text-green-600">1.º en «fontanero manzanares el real»</span>
                 </div>
               </div>
               <ul className="space-y-2 text-sm font-medium text-gray-700">
-                <li className="flex items-center gap-2"><span className="text-blue-600">✓</span> Tráfico orgánico de averías y reformas en la Sierra</li>
-                <li className="flex items-center gap-2"><span className="text-blue-600">✓</span> Presupuestos en PDF emitidos en 2 minutos</li>
+                <li className="flex items-center gap-2"><span className="text-blue-600">✓</span> Más llamadas desde Google Maps en la Sierra</li>
+                <li className="flex items-center gap-2"><span className="text-blue-600">✓</span> Presupuestos en PDF desde el móvil</li>
               </ul>
             </div>
 
@@ -126,15 +125,15 @@ export default function Home() {
 
               <div className="flex items-center gap-3 mb-4">
                 <span className="bg-amber-100 text-amber-800 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide">Turismo y Alquiler</span>
-                <span className="text-sm font-semibold text-gray-500">[[¿CLIENTE O PROYECTO PROPIO?: Ej. Proyecto propio Camper / Empresa colaboradora]]</span>
+                <span className="text-sm font-semibold text-gray-500">Proyecto propio · en fase piloto</span>
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-3">Atención al Cliente y Reservas con IA</h3>
               <p className="text-gray-600 mb-6 leading-relaxed">
                 Desarrollo de un Asistente Virtual Inteligente para reservas de autocaravanas. El sistema resuelve dudas repetitivas (fianzas, seguros, mascotas, kilometraje) y guía hacia la reserva 24/7 sin que se pierdan horas al teléfono.
               </p>
               <ul className="space-y-2 text-sm font-medium text-gray-700 pt-4">
-                <li className="flex items-center gap-2"><span className="text-blue-600">✓</span> Ahorro radical de tiempo en WhatsApp</li>
-                <li className="flex items-center gap-2"><span className="text-blue-600">✓</span> Cierre de reservas fuera de horario comercial</li>
+                <li className="flex items-center gap-2"><span className="text-blue-600">✓</span> Diseñado para resolver dudas por WhatsApp sin atender cada mensaje</li>
+                <li className="flex items-center gap-2"><span className="text-blue-600">✓</span> Pensado para captar reservas fuera de horario</li>
               </ul>
             </div>
           </div>

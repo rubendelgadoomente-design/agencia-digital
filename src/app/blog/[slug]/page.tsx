@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { articulos } from '@/data/articulos';
 
 export function generateStaticParams() {
-  return articulos.map((a) => ({
+  return articulos.filter((a) => a.publicado).map((a) => ({
     slug: a.slug,
   }));
 }
@@ -15,7 +15,7 @@ type Props = {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const resolved = await params;
-  const articulo = articulos.find((a) => a.slug === resolved.slug);
+  const articulo = articulos.find((a) => a.slug === resolved.slug && a.publicado);
 
   if (!articulo) return { title: 'Artículo no encontrado | Motor Local' };
 
@@ -35,7 +35,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 export default async function ArticuloBorradorPage({ params }: Props) {
   const resolved = await params;
-  const articulo = articulos.find((a) => a.slug === resolved.slug);
+  const articulo = articulos.find((a) => a.slug === resolved.slug && a.publicado);
 
   if (!articulo) {
     notFound();
@@ -77,10 +77,10 @@ export default async function ArticuloBorradorPage({ params }: Props) {
           <div className="bg-gray-50 border border-dashed border-gray-300 p-8 rounded-2xl text-center text-gray-500">
             <span className="text-4xl block mb-2">📝</span>
             <h2 className="text-lg font-bold text-gray-800 mb-1">
-              [[CONTENIDO DEL ARTÍCULO: {articulo.titulo}]]
+              {articulo.titulo}
             </h2>
             <p className="text-sm text-gray-600 max-w-md mx-auto mt-2">
-              [Espacio reservado para el texto completo del artículo, gráficos comparativos de costes por clic, pantallazos de Google Search Console y análisis de métricas locales].
+              Contenido en redacción. Próximamente disponible.
             </p>
           </div>
         </main>

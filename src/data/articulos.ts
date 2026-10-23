@@ -5,6 +5,7 @@ export interface Articulo {
   categoria: string;
   resumen: string;
   tiempoLectura: string;
+  publicado: boolean;
 }
 
 export const articulos: Articulo[] = [
@@ -15,6 +16,7 @@ export const articulos: Articulo[] = [
     categoria: 'Publicidad Local',
     resumen: 'Análisis de los costes reales por clic en Google Ads para instaladores de pérgolas y toldos en la Comunidad de Madrid, y las fugas de presupuesto más comunes.',
     tiempoLectura: 'Borrador (noindex)',
+    publicado: false,
   },
   {
     slug: 'lo-que-aprendi-posicionando-empresa-reparaciones-sierra-madrid',
@@ -23,6 +25,7 @@ export const articulos: Articulo[] = [
     categoria: 'Caso Real',
     resumen: 'De depender del boca a boca a recibir llamadas semanales constantes en Manzanares el Real y pueblos vecinos: las lecciones técnicas y comerciales del proceso.',
     tiempoLectura: 'Borrador (noindex)',
+    publicado: false,
   },
   {
     slug: '5-errores-ficha-google-negocios-sierra',
@@ -31,5 +34,6 @@ export const articulos: Articulo[] = [
     categoria: 'Google Maps & SEO',
     resumen: 'Categorías mal elegidas, áreas de servicio mal configuradas y falta de reseñas locales: los cinco fallos que impiden a los autónomos de la Sierra salir en el Top 3.',
     tiempoLectura: 'Borrador (noindex)',
+    publicado: false,
   },
 ];

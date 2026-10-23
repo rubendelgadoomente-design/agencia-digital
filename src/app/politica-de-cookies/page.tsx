@@ -13,9 +13,7 @@ export default function PoliticaCookiesPage() {
   return (
     <div className="bg-white min-h-screen py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-3xl mx-auto prose prose-slate">
-        <div className="bg-amber-50 border-l-4 border-amber-400 p-4 mb-8 text-sm text-amber-800">
-          <strong>Aviso legal importante:</strong> Texto redactado conforme a la Directiva ePrivacy y a la Guía sobre el uso de cookies de la AEPD. [[NOTA: UN ABOGADO DEBE REVISAR ESTE TEXTO ANTES DE SU APLICACIÓN DEFINITIVA]].
-        </div>
+        {/* NOTA: Un abogado debe revisar este texto antes de su aplicación definitiva. */}
 
         <h1 className="text-3xl font-extrabold text-gray-900 mb-6">Política de Cookies</h1>
 
@@ -42,10 +40,10 @@ export default function PoliticaCookiesPage() {
             Son aquellas que nos permiten cuantificar el número de usuarios y realizar la medición y análisis estadístico del uso que hacen los usuarios de nuestra web (páginas más vistas, tiempo de navegación, fuentes de tráfico). 
           </p>
           <div className="bg-gray-50 p-4 rounded-lg border border-gray-200 text-sm">
-            <p><strong>Proveedor:</strong> Google LLC (Google Analytics 4 - ID: [[GA4_ID]])</p>
+            <p><strong>Proveedor:</strong> Google LLC (cookies <code>_ga</code> y <code>_ga_&lt;ID&gt;</code> de Google Analytics 4)</p>
             <p><strong>Finalidad:</strong> Medición analítica anónima y eventos de navegación.</p>
             <p><strong>Duración:</strong> Máximo 2 años.</p>
-            <p><strong>Condición:</strong> <em>No se cargan ni instalan en su navegador a menos que usted pulse expresamente el botón "Aceptar" en nuestro banner de cookies.</em></p>
+            <p><strong>Condición:</strong> <em>No se cargan ni instalan en su navegador a menos que usted pulse expresamente el botón &quot;Aceptar&quot; en nuestro banner de cookies.</em></p>
           </div>
 
           <h2 className="text-xl font-bold text-gray-900">3. Gestión y Configuración del Consentimiento</h2>
@@ -64,7 +62,7 @@ export default function PoliticaCookiesPage() {
 
           <h2 className="text-xl font-bold text-gray-900">4. Contacto</h2>
           <p>
-            Si tiene alguna duda sobre el uso de cookies en nuestro sitio web, puede dirigirse a [[EMAIL]].
+            Si tiene alguna duda sobre el uso de cookies en nuestro sitio web, puede dirigirse a <a href="mailto:hola@agenciamotorlocal.es" className="text-blue-600 hover:underline">hola@agenciamotorlocal.es</a>.
           </p>
         </section>
 
